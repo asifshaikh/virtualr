@@ -48,7 +48,7 @@ const NavBar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className='py-4 text-white hover:text-gray-400'>
-                  <a href={item.href}>{item.label}</a>
+                  <a href={item.href} onClick={() => setIsMenuOpen(false)}>{item.label}</a>
                 </li>
               ))}
             </ul>
